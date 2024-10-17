@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    /*background-color: black;*/
 }
 
 .container {
@@ -46,8 +47,10 @@ ul {
 a,
 a:link {
     text-decoration: none;
+    text-decoration-color: white;
     padding: 8px 16px;
     border: solid #070173 1px;
+    
 }
 
 li {
@@ -55,7 +58,20 @@ li {
 }
 
 a:hover {
-    background-color: #070173;
+    background-color: #291eff;
     color: white;
 }
 
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+    .principal {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+}
