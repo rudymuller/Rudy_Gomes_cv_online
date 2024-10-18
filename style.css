@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    /*background-color: black;*/
 }
 
 .container {
@@ -21,6 +20,10 @@ header {
     gap: 10px;
 }
 
+.imagem_perfil {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 
 .principal {
     grid-column-start: 4;
@@ -34,14 +37,14 @@ header {
 footer {
     grid-column-start: 1;
     grid-column-end: 12;
-    background-color: #070173;
+    background-color: #506E6A;
     color: white;
     text-align: center;
 }
 
 ul {
     list-style-type: none;
-    color: #070173;
+    color: #506E6A;
 }
 
 a,
@@ -64,6 +67,11 @@ a:hover {
 
 @media only screen and (max-width: 767px) {
     .wrapper {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .imagem_perfil {
         grid-column-start: 1;
         grid-column-end: 1;
 
