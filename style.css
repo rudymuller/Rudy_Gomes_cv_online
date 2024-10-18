@@ -37,7 +37,7 @@ header {
 footer {
     grid-column-start: 1;
     grid-column-end: 12;
-    background-color: #506E6A;
+    background-color:#f70808;
     color: white;
     text-align: center;
 }
