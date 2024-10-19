@@ -10,7 +10,9 @@ header {
     grid-column-start: 1;
     grid-column-end: 12;
     padding: 20px;
+    padding-top: 50px;
     background-color: #070173;
+    text-align: center;
 }
 
 .menu {
@@ -20,18 +22,18 @@ header {
     gap: 10px;
 }
 
-.imagem_perfil {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
 .principal {
     grid-column-start: 4;
     grid-column-end: 12;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 100px;
+    padding-top: 50px;
     text-align: justify;
 
+}
+
+.infos {
+    justify-content: center;
 }
 
 footer {
@@ -51,7 +53,7 @@ a,
 a:link {
     text-decoration: none;
     text-decoration-color: white;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border: solid #070173 1px;
     
 }
@@ -63,6 +65,18 @@ li {
 a:hover {
     background-color: #291eff;
     color: white;
+
+}
+
+a:visited{
+    color: white;
+}
+
+
+/*  Formatação titulo */
+
+h1{
+    color: #030133;  
 }
 
 @media only screen and (max-width: 767px) {
@@ -71,14 +85,12 @@ a:hover {
         grid-column-end: 1;
     }
 
-    .imagem_perfil {
-        grid-column-start: 1;
-        grid-column-end: 1;
-
-    }
-
     .principal {
         grid-column-start: 1;
         grid-column-end: 1;
+    }
+
+    .infos {
+        justify-content: center;
     }
 }
