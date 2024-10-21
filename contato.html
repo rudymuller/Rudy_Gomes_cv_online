@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rudy Gomes</title>
+    <title>Rudy Gomes - Contato</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,18 +14,48 @@
         <div id="nome"> <strong>RUDY GOMES</strong></div>
 
         <div class="menu">
-            <ul>
-                <li><a href="index.html">SOBRE MIM</a></li>
-                <li><a href="formacao.html">FORMAÇÃO PROFISSIONAL</a></a></li>
-                <li><a href="portifolio.html">PORTIFÓLIO</a></li>
-                <li><a href="contato.html">CONTATO</a></li>
+            <ul class="menu">
+                <li class="menu"><a class="one" href="index.html">SOBRE MIM</a></li>
+                <li class="menu"><a class="one" href="formacao.html">FORMAÇÃO PROFISSIONAL</a></a></li>
+                <li class="menu"><a class="one" href="portifolio.html">PORTIFÓLIO</a></li>
+                <li class="menu"><a class="one" href="contato.html">CONTATO</a></li>
             </ul>
         </div>
     
     </header>
-    
-    <footer class="container">
-        <h1><strong>Em desenvolvimento...</strong></h1>
-    </footer>
+       
+    <div class="container content-left">
+        <aside class="container icones-left">
+            <img src="images/icone-contato.png" width="300" height="300">
+           
+        </aside>
+        <section class="conteudo">
+
+            <!--Formulario para contato-->
+            <h1>Deixe seu contato: </h1>
+            <form action="data/contatos.txt">
+                <label for="nome">Nome: </label><br>
+                <input type="text" name="nome"><br><br>
+                <label for="empresa">Empresa:</label><br>
+                <input type="text" name="empresa"><br><br>
+                <label for="email">E-mail</label><br>
+                <input type="email" name="email"><br><br>
+                <label for="telefone"></label>Numero para contato<br>
+                <input type="tel"> <br><br> 
+                <label for="Mensagem">Mensagem: </label><br>
+                <textarea name="mensagem" rows="5" cols="50"></textarea>
+                <input type="submit">
+                
+            </form>
+
+            <p>Ou entre em contato através do E-mail: rudygomes19gmail.com  <button>ENVIAR E-MAIL</button>
+
+            
+            
+        </section>
+    </div>
+    <div id="footer">
+        Todos os direitos reservados - Rudy Gomes
+    </div>
 </body>
 </html>
